@@ -28,7 +28,7 @@ class BasicAuth(Auth):
         token = authorization_header.split(" ")[-1]
         return token
 
-def decode_base64_authorization_header(self,
+    def decode_base64_authorization_header(self,
                                            base64_authorization_header:
                                            str) -> str:
         """
