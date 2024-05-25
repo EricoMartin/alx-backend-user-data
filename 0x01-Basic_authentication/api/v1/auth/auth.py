@@ -24,7 +24,7 @@ class Auth:
             authentication
         Return:
             - True if path is not in excluded_paths, else False
-        """    
+        """
         return False
 
     def authorization_header(self, request=None) -> str:
