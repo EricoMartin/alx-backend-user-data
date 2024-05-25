@@ -44,6 +44,7 @@ class BasicAuth(Auth):
             return decoded.decode('utf-8')
         except Exception:
             return None
+        
     def extract_user_credentials(self,
                                  decoded_base64_authorization_header:
                                  str) -> (str, str):
@@ -94,4 +95,3 @@ class BasicAuth(Auth):
                     if email is not None:
                         return self.user_object_from_credentials(email, pword)
         return
-    
